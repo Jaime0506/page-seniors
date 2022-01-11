@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Cuidado del Mayor</title>
+
+    </head>
+
+    <body>
+
+        <section class="content-header">
+
+            <header class="header">
+                <div class="content-relleno"></div>
+                <div class="content-title">
+                    <h1>Cuidado del Mayor</h1>
+                </div>
+                <div class="content-icon">
+                    <button class="btn-menu">
+                        <img src="img/menu.svg" alt="menu" class="imageMenu">
+                    </button>
+                </div>
+            </header>
+
+        </section>
+
+        <!-- PushBar Menu-->
+
+        <div data-pushbar-id="menu" data-pushbar-direction="right" class="pushbar">
+
+            <span class="closeBar" id="closeBar">
+                <img src="img/btnExit.svg" alt="exit close" class="imageExit">
+            </span>
+            <span class="rInicio">Inicio</span>
+            <span class="rFuncion">Nuestra Funcion</span>
+            <span class="rEquipo">Nuestro Equipo</span>
+            <span class="rUbicacion">Nuestra Ubicacion</span>
+
+        </div>
+
+        <!-- Modal -->
+        
+        <div class="containerModal" id="containerModal">
+
+                <div class="modal-contenido">
+
+                    <div class="containerButtonClose" id="closeModal">
+                        <img src="img/x.svg" alt="close exit" id="imageCloseModal">
+                    </div> 
+                    
+                    <h1 id="modalOffice"></h1>
+                    <h2 id="modalTitle">Mi primer Modal</h2>
+                    <p id="modalSubtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate eius, saepe obcaecati commodi quae praesentium nisi recusandae accusantium non. Magnam aut possimus repellat velit veritatis? Commodi excepturi rem pariatur?
+                        Dolor sunt rem explicabo quisquam eaque quod omnis nisi ipsum earum tenetur, error quos libero possimus nam iusto vitae repellendus. Sequi vel reiciendis quisquam sit illo harum esse cum veniam.
+                    </p>
+                </div>
+
+        </div>
+
+        <section class="content-firsPage" id="content-firsPage">
+
+            <div class="firstPage" id="firstPageID">
+                <div class="text">
+                    <h2 class="title-firstPage">
+                        ¿ Quienes Somos ?
+                    </h2>
+                    <h3 class="subtitle-firstPage">
+                        Personas que se preocupan por el cuidado del adulto mayor
+                    </h3>
+                </div>
+                <div class="content-FirstImage">
+                    <img src="img/ImageComponent.png" alt="viejito" class="imageViejito">
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="content-secondPage" id="content-secondPage">
+            
+                <div class="secondPage" id="secondPage">
+                    <h1 class="title-secondPage">¿ Nuestra funcion ?</h1>
+
+                    <h3 class="subtitle-secondPage">Cuidar de adultos de mayor edad, que requieran unos cuidados especiales y atencion constante, con las personas y equipos necesarios para el mejor trato, sin hacerlos sentir como si estuviesen en un hospital</h3>
+
+                    <img src="img/secondImageComponent.svg" alt="enfermeras" class="imageEnfermeras">
+                </div>
+
+        </section>
+
+        <section class="content-threePage" id="content-threePage">
+
+            <div class="threePage" id="threePage">
+                <h2 class="title-threePage">
+                    Equipo de trabajo
+                </h2>
+
+                <div class="content-imagesThreePage">
+                    <div class="nurse-image imageContentCard">
+                        <img src="img/nurse.svg" alt="nurseCard" class="imageCard nurse">
+                    </div>
+                    <div class="boss-image imageContentCard">
+                        <img src="img/boss.svg" alt="bossCard" class="imageCard boss">
+                    </div>
+                    <div class="doctor-image imageContentCard">
+                        <img src="img/doctor.svg" alt="doctorCard" class="imageCard doctor">
+                    </div>
+                </div>
+                <h3 class="subtitle-threePage">
+                    Contamos con las enfermeras necesarias para cualquier tipo cuidado y convenios con doctores que se encargaran de vigilar constantemente su estado de salud.
+                </h3>
+            </div>
+            
+        </section>
+
+        <section class="content-fourPage" id="content-fourPage">
+
+            <div class="fourPage" id="fourPage">
+                <div class="contentTextFourPage">
+                    <h2 class="title-fourPage">
+                        ¿ Donde nos encontramos ?
+                    </h2>
+                    <h3 class="subtitle-fourPage">
+                        Actualmente nos ubicamos en bogota, cundinamarca en la localidad de fontibon. kr 30 28-60, llama y pregeunta por nosotros al siguiente numero <span class="numberSubtitle">+57 123 456 7890</span> o escribenos al whatsapp
+                    </h3>
+                    <div class="buttonWhatsapp">
+                        <img src="img/Whatsapp.svg" alt="whatsapp" class="logoWhatsapp">
+                        <h3 class="textButton">Contactanos</h3>
+                    </div>
+                </div>
+                <div class="contentInfoFourPage">
+                    <img src="img/ImageComponentThree.svg" alt="addres" class="imageAddres">
+                </div>
+            </div>
+
+        </section>
+
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
