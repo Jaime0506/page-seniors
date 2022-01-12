@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 
 *{
@@ -331,7 +331,7 @@
 .modal-contenido {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     background-color: white;
     margin: 20px;
     padding: 20px;
@@ -339,17 +339,72 @@
     max-width: 850px;
 }
 
+#modalInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalInfoText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#modalInfoImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#modalOffice {
+    font-family: 'Poppins', 'Helvetica';
+    padding: 0 20px 10px 20px;
+    color: #27AE60;
+    font-weight: bold;
+}
+
 #modalTitle {
     font-family: 'Poppins', 'Helvetica';
     font-weight: bold;
-    padding: 0 30px 10px 30px;
+    padding: 0 20px 5px 20px;
 }
 
 #modalSubtitle {
     font-family: 'Poppins', 'Helvetica';
     font-weight: 600;
     color: #464646;
-    padding: 0 30px 30px 30px;
+    padding: 0 20px 15px 20px;
+    text-align: justify;
+
+}
+
+#buttonDownloadPDF {
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #dbdbdb;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+#buttonDownloadPDF img {
+    width: 30px;
+}
+
+#modalImage {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 3px #565656;
 }
 
 #openModal {
