@@ -23,8 +23,8 @@ function downloadPDF (path, name){
 
 
 //DIMENSSIONS PAGE SECTIONS------------------------------------------------------------------
-
 const heightWindows = window.innerHeight - 60
+const sidebar = document.getElementById('container-sidebar')
 
 document.getElementById('content-firsPage').style.height = heightWindows + 60 + 'px'
 document.getElementById('firstPageID').style.height = heightWindows + 60 + 'px'
@@ -40,24 +40,36 @@ document.getElementById('fourPage').style.height = heightWindows  + 'px'
 
 //PUSHBAR-------------------------------------------------------------------------------
 
-//OPEN
-document.querySelector('.btn-menu').addEventListener('click', () => {
-    pushbar.open('menu')
-})
+
+//FUNCTIONS SIDEBAR
+function openSidebar () {
+    sidebar.style.opacity = 1
+    sidebar.style.pointerEvents = 'all'
+}
+
+function closeSidebar () {
+    sidebar.style.opacity = 0
+    sidebar.style.pointerEvents = 'none'
+}
+
+//OPEN BUTTON
+document.querySelector('.btn-menu').addEventListener('click', () => openSidebar() )
+
+//CLOSE BUTTON
+document.getElementById('buttonCloseSide').addEventListener('click', () => closeSidebar() )
 
 //CLOSE
-document.querySelector('.imageExit').addEventListener('click', () => {
-    pushbar.close()
-})
+document.getElementById('not-content').addEventListener('click', () => closeSidebar() )
 
 //FUNCTIONS SCROLL
+
 document.querySelector('.rInicio').addEventListener('click', function() {
     window.scroll({
         top: 0,
         left: 0,
         behavior: 'smooth',
     })
-    pushbar.close()
+    closeSidebar()
 })
 
 document.querySelector('.rFuncion').addEventListener('click', () => {
@@ -66,7 +78,7 @@ document.querySelector('.rFuncion').addEventListener('click', () => {
         left: 0,
         behavior: 'smooth',
     })
-    pushbar.close()
+    closeSidebar()
 })
 
 document.querySelector('.rEquipo').addEventListener('click', () => {
@@ -75,7 +87,7 @@ document.querySelector('.rEquipo').addEventListener('click', () => {
         left: 0,
         behavior: 'smooth',
     })
-    pushbar.close()
+    closeSidebar()
 })
 
 document.querySelector('.rUbicacion').addEventListener('click', () => {
@@ -84,9 +96,8 @@ document.querySelector('.rUbicacion').addEventListener('click', () => {
         left: 0,
         behavior: 'smooth',
     })
-    pushbar.close()
+    closeSidebar()
 })
-
 
 //MODALS - CARDS-------------------------------------------------------------------------
 
