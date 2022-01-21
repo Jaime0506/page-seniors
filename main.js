@@ -1,9 +1,3 @@
-import Pushbar from './pushbar/pushbar.js'
-
-const pushbar = new Pushbar({
-    blur: true,
-    overlay: true,
-})
 
 // FUNCTION DOWNLOAD PDF-------------------------------------------------------------------------
 
@@ -38,8 +32,7 @@ document.getElementById('threePage').style.height = heightWindows + 'px'
 document.getElementById('content-fourPage').style.height = heightWindows  + 'px'
 document.getElementById('fourPage').style.height = heightWindows  + 'px'
 
-//PUSHBAR-------------------------------------------------------------------------------
-
+//SIDEBAR------------------------------------------------------------------------------------------------
 
 //FUNCTIONS SIDEBAR
 function openSidebar () {
@@ -61,7 +54,7 @@ document.getElementById('buttonCloseSide').addEventListener('click', () => close
 //CLOSE
 document.getElementById('not-content').addEventListener('click', () => closeSidebar() )
 
-//FUNCTIONS SCROLL
+//FUNCTIONS SCROLL-------------------------------------------------------------------------------------------------
 
 document.querySelector('.rInicio').addEventListener('click', function() {
     window.scroll({

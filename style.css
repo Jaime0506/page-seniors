@@ -42,7 +42,9 @@
     background-color: transparent;
     padding-right: 10px;
     cursor: pointer;
+    transition: all 0.2s step-end;
 }
+
 .imageMenu {
     height: 50px;
     width: 50px;
@@ -348,9 +350,16 @@
 #wrap-content p {
     color: white;
     font-family: 'Poppins', 'Helvetica';
+    padding: 5px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in;
+}
+
+#wrap-content p:hover {
+    border-bottom: 3px solid rgb(118, 241, 170);
 }
 
  /* MODAL */
